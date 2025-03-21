@@ -14,12 +14,70 @@
             padding: 0;
         }
 
+        .menu {
+            background-color: #4B0082; 
+            overflow: hidden;
+            text-align: center; 
+            width: 100%;
+            margin: 0 auto; 
+        }
+
+        .menu a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background-color: #FFD700; 
+            color: black; 
+        }
+
+        .menu a.icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu a {
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+
+            .menu a.icon {
+                display: block;
+                font-size: 30px;
+                padding: 14px 20px;
+                background-color: #4B0082;
+            }
+
+            .menu.responsive {
+                position: relative;
+            }
+
+            .menu.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .menu.responsive a {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
         .container {
             width: 90%;
             max-width: 800px;
             margin: auto;
             padding: 20px;
-            border-radius: 10px; /* Remover as bordas */
+            border-radius: 10px;
+            border: none;
         }
 
         h1 {
@@ -72,9 +130,10 @@
         .footer {
             margin-top: 40px;
             padding: 20px;
-            border-radius: 10px; /* Remover as bordas */
+            border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.1);
             font-size: 14px;
+            border: none;
         }
 
         @media (max-width: 600px) {
@@ -91,15 +150,24 @@
     </style>
 </head>
 <body>
+
+    <div class="menu" id="menu">
+        <a href="javascript:void(0);" class="icon">&#9776;</a>
+        <a href="#inicio">Início</a>
+        <a href="#contribuicoes">Contribuições</a>
+        <a href="#periodos">Períodos</a>
+        <a href="#polis">Pólis Grega</a>
+    </div>
+
     <div class="container">
         <h1>Grécia Antiga</h1>
-        <h2>Introdução</h2>
+        <h2 id="inicio">Introdução</h2>
         <p>A Grécia Antiga foi uma civilização composta por várias cidades-estado independentes, como Atenas e Esparta. Seu legado inclui avanços na política, filosofia, arte e ciências.</p>
         
         <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/historia-esparta-e-atenas-escola-de-filosofia-de-atenas.jpg" alt="Escola de Filosofia de Atenas">
         <p><small>Fonte: Educamais Brasil</small></p>
         
-        <h2>Contribuições da Grécia Antiga</h2>
+        <h2 id="contribuicoes">Contribuições da Grécia Antiga</h2>
         <ul>
             <li>Democracia</li>
             <li>Obras filosóficas de Sócrates, Platão e Aristóteles</li>
@@ -109,7 +177,7 @@
             <li>Jogos Olímpicos</li>
         </ul>
         
-        <h2>Períodos da História Grega</h2>
+        <h2 id="periodos">Períodos da História Grega</h2>
         <ul>
             <li><a href="https://pt.wikipedia.org/wiki/Per%C3%ADodo_hom%C3%A9rico" target="_blank">Pré-Homérico</a></li>
             <li><a href="https://pt.wikipedia.org/wiki/Per%C3%ADodo_hom%C3%A9rico" target="_blank">Homérico</a></li>
@@ -120,7 +188,7 @@
         
         <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGCIgRJYUxkGyn1g2pp6UKGpGVZuvl9zLk6OoU_u4N7Ev1QUG9Q1qr_sIY9712gcgky90d75RsQHTwkWvM0pm2E5a9e0fEcMhR2R3V5ZZcGRuBXjiEVPXrzyERi-Lr18whNJoIRxwzLw/s1600/dsadads.jpg" alt="Imagem da Grécia Antiga">
         
-        <h2>A Pólis Grega</h2>
+        <h2 id="polis">A Pólis Grega</h2>
         <p>As pólis eram cidades-estado independentes que incluíam tanto o campo quanto a cidade. Elas eram governadas por uma oligarquia aristocrática e foram essenciais para o desenvolvimento da cultura grega.</p>
         <ul>
             <li>Atenas e Esparta foram as pólis mais importantes.</li>
@@ -131,3 +199,7 @@
     
     <div class="footer">
         Filosofia - Grécia Antiga | Todos os direitos reservados © 2025
+    </div>
+</body>
+</html>
+
