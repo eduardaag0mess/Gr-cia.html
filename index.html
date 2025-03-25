@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filosofia - Grécia Antiga</title>
+    <style>
+        body {
+            background-color: #4B0082;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu {
+            background-color: #4B0082;
+            overflow: hidden;
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .menu a {
+            display: inline-block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .menu a:hover {
+            background-color: #FFD700;
+            color: black;
+        }
+
+        .menu a.icon {
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .menu a {
+                display: block;
+                text-align: left;
+                width: 100%;
+            }
+
+            .menu a.icon {
+                display: block;
+                font-size: 30px;
+                padding: 14px 20px;
+                background-color: #4B0082;
+            }
+
+            .menu.responsive {
+                position: relative;
+            }
+
+            .menu.responsive a.icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .menu.responsive a {
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            border: none;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            margin-top: 20px;
+            border-bottom: 2px solid white;
+            padding-bottom: 5px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            font-size: 18px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #FFD700;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            font-size: 14px;
+            border: none;
+        }
+
+        .footer a {
+            color: #FFD700; 
+            text-decoration: none; 
+            font-size: 20px; 
+        }
+
+        .footer a:hover {
+            color: white; 
+        }
+
+        .footer img {
+            width: 30px; 
+            height: 30px;
+            vertical-align: middle; 
+            margin-right: 10px; 
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 40px;
+            }
+            h2 {
+                font-size: 24px;
+            }
+            p, ul, li, a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu" id="menu">
+        <a href="javascript:void(0);" class="icon">&#9776;</a>
+        <a href="#inicio">Início</a>
+        <a href="#contribuicoes">Contribuições</a>
+        <a href="#periodos">Períodos</a>
+        <a href="#polis">Pólis Grega</a>
+    </div>
+
+    <div class="container">
+        <h1>Grécia Antiga</h1>
+        <h2 id="inicio">Introdução</h2>
+        <p>A Grécia Antiga foi uma civilização composta por várias cidades-estado independentes, como Atenas e Esparta. Seu legado inclui avanços na política, filosofia, arte e ciências.
+          Além disso a Grécia Antiga pertenceu ao período da Antiguidade Clássica que compreendeu desde o Período Pré-Homérico terminando com o início da Idade Média. 
+          Nesse site você vai conhecer um pouco sobre esses períodos da Antiguidade Clássica.  
+          A Grécia Antiga era composta por um conjunto de cidades que partilhavam a língua, os costumes e algumas leis.</p>
+        
+        <img src="https://images.educamaisbrasil.com.br/content/banco_de_imagens/guia-de-estudo/D/historia-esparta-e-atenas-escola-de-filosofia-de-atenas.jpg" alt="Escola de Filosofia de Atenas">
+        <p><small>Fonte: Educamais Brasil</small></p>
+
+        <h2 id="contribuicoes">Contribuições da Grécia Antiga</h2>
+        <ul>
+            <li>Democracia</li>
+            <li>Obras filosóficas de Sócrates, Platão e Aristóteles</li>
+            <li>Literatura épica como "Ilíada" e "Odisseia"</li>
+            <li>Avanços em ciência e matemática</li>
+            <li>Padrões de arte e arquitetura</li>
+            <li>Jogos Olímpicos</li>
+        </ul>
+
+        <h2 id="periodos">Períodos da História Grega</h2>
+        <ul>
+            <li><a href="https://pt.wikipedia.org/wiki/Per%C3%ADodo_hom%C3%A9rico" target="_blank">Pré-Homérico</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Per%C3%ADodo_hom%C3%A9rico" target="_blank">Homérico</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Per%C3%ADodo_Arcaico" target="_blank">Arcaico</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Gr%C3%A9cia_Antiga" target="_blank">Clássico</a></li>
+            <li><a href="https://pt.wikipedia.org/wiki/Per%C3%ADodo_helen%C3%ADstico" target="_blank">Helenístico</a></li>
+        </ul>
+
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiGCIgRJYUxkGyn1g2pp6UKGpGVZuvl9zLk6OoU_u4N7Ev1QUG9Q1qr_sIY9712gcgky90d75RsQHTwkWvM0pm2E5a9e0fEcMhR2R3V5ZZcGRuBXjiEVPXrzyERi-Lr18whNJoIRxwzLw/s1600/dsadads.jpg" alt="Imagem da Grécia Antiga">
+              <p><small>Fonte: Educamais Brasil</small></p>
+
+        <h2 id="polis">A Pólis Grega</h2>
+        <p>Do ponto de vista histórico, as pólis formadas na Grécia não só determinaram a presença de um tipo de organização demográfica mais extensa, foram de suma importância para que os gregos passassem a debater; elaborar e transformar as leis que regiam o seu cotidiano.</p>
+        <ul>
+            <li>Atenas e Esparta foram as pólis mais importantes.</li>
+            <li>O conceito de pólis surgiu no século VIII a.C.</li>
+            <li>As pólis tinham autonomia política e econômica.</li>
+        </ul>
+        </div>
+    
+         <div class="container">
+            <div class="div-vídeo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/ijU4-hf7lGE?si=tTleMGcy4crE4Iew" title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+         </div>
+
+    <div class="footer">
+        Filosofia - Grécia Antiga | Todos os direitos reservados © 2025
+        <br>
+        <a href="https://www.instagram.com/2tec.dds?igsh=MXFha21peGN4Y3oyaQ==" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram">
+            Instagram
+        </a>
+    </div>
+
+</body>
+</html>
